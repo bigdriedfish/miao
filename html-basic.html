@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Html练习</title>
 </head>
 <body>
+<hgroup>
   <h1>Lorem.</h1>  
   <h2>Lorem, ipsum.</h2>  
   <h3>Lorem, ipsum dolor.</h3>  
-
+</hgroup>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quos ipsa deserunt ullam, odit ipsum rerum tempora enim magni sequi.</p>    
 
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut veritatis pariatur aspernatur quod et vel. Vel voluptas id provident quibusdam ratione dolores debitis enim asperiores.</p>  
@@ -36,26 +37,30 @@
   <p>下面是一段JavaScript代码，最适合用何种标签表示呢？</p>
 
     <pre>
-      function a (){
-        return 8
-      }
+      <code>
+          function a (){
+            return 8
+          }
+      </code>
     </pre>
 
     <hr>
 
   <ul>
-    <li>小学</li>
+    <li><span>小学</span></li>
       <ol>
-        <li>一年级</li> 
+        <li><span>一年级</span></li> 
         <ol>  
           <li>上学期</li>
           <li>下学期</li>
-      </ol>
-      <li>二年级</li>
-      <li>三年级</li>
+        </ol>
+          <li>二年级</li>
+          <li>三年级</li>
+        </ol>
+    <li><span>中学</span> </li>
+    <li><span>大学</span> </li>
   </ul>
-  <ul><li>中学</li></ul>
-  <ul><li>大学</li></ul>
+  
 
 <hr>
 
@@ -74,9 +79,13 @@
   <hr>
 
   <h3>Google搜索</h3> 
-    <input type="text" required>   
-    <input type="button" target="_blank" value="在新窗口打开搜索结果">
-   
+  <form action="https://www.google.com.hk/search" target="_blank">
+     <input type="text" name="q" required >
+      <label>
+        <input type="checkbox"  name="newwindow" value="1">
+      </label>
+    <button>在新窗口打开搜索结果</button>  
+  </form>
    
      
  
@@ -86,22 +95,23 @@
     <dl>
     <dt>性别</dt>
       <dd>
-        <label> <input type="radio" name ="gender"> 男 </label>
-        <label> <input type="radio" name ="gender"> 女 </label>
+        <label><input type="radio" name ="" id="">男</label>
+        <label><input type="radio" name ="" id="">女</label>
       </dd>
 
     <dt>年龄</dt>
-    <select name="" id="">
-      <optgroup label="少年">
-        <option value="">1-6岁</option>
-        <option value="">6-12岁</option>
-      <optgroup label="青年">
-          <option value="">13-15岁</option>
-          <option value="">16-18岁</option>
-      <optgroup label="壮年">
-          <option value="">18-22岁</option>
-          <option value="">23-30岁</option>
-    </select>
+        <select name="" id="">
+          <option value=""hidden>请选择</option>
+          <optgroup label="少年">
+              <option value="">1-6岁</option>
+              <option value="">6-12岁</option>
+          <optgroup label="青年">
+              <option value="">13-15岁</option>
+              <option value="">16-18岁</option>
+          <optgroup label="壮年">
+              <option value="">18-22岁</option>
+              <option value="">23-30岁</option>
+        </select>
 
     <dt>生日</dt>
       <dd><input type="date"></dd>
@@ -127,6 +137,7 @@
     </fieldset>
 
     <button>提交</button>
+    <!-- <input type="submit" value="submit"> -->
     <button type="reset">重置</button>
 
   </form>  
