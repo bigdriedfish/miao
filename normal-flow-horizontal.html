@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>normal-folw-horozontal</title>
 <style>
-  *{
+  /* *{
     background-color:yellow;
-  }
+  } */
   div{
     border:3px solid green;
     width: 300px;
@@ -18,14 +18,16 @@
   }
 
   section{
+    border:3px solid grey;
     width:200px;
     height:200px;
     padding:30px;
   }
   
   p{
-    height:50px;
+    /* height:50px;  */
     background-color:lightblue;
+    /* display:inline; */
   }
 
   p:hover{
@@ -33,12 +35,12 @@
     margin-right:-30px;
   }
 
-  h1{
+  .p{
+    direction:rtl;
     border:3px solid lightgreen;
     width: 200px;
     margin-left:auto;
-    margin-right:1px;
-    padding: 20px;
+    margin-right:0px;
 }
 
 </style>
@@ -49,6 +51,6 @@
     <section> 
       <p>Lorem, ipsum dolor.</p>
     </section>
-    <h1>Lorem, ipsum dolor.</h1>
+    <div class="p">Lorem, ipsum dolor.</div>
 </body>
 </html>
