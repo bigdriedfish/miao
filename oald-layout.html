@@ -6,31 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>oald-layout</title>
   <style>
-    .topdata{
-      border:1px solid;
-      margin: auto;
-    }
-    p{
-      box-sizing: content-box;
-      text-align: center;
-    }
-    .leftpanel{
+    
+    *{
+  background-color:rgba(0,0,0,0.08);
+  box-sizing: inherit;
+}
 
-    }
-    .maincontainer{
 
-    }
-  
-  
-  
-  
+html,body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100%;
+  font-size: 0;
+}
+
+.wrapper > * {
+  font-size: initial;
+  display: inline-block;
+  height: 100%;
+  width: 20%;
+}
+.a2 {
+  width: 40%;
+}
   
   </style>
 </head>
 <body>
-<div class="topdata"><p> Lorem ipsum dolor sit. </p></div> 
-<div class="leftpanel"> </div>
-<div class="maincontainer"> </div>
+    <div class="wrapper">
+        <section class="a1">1</section>
+        <section class="a2">
+          <h1>head</h1>
+          <main>mainmain</main>
+        </section>
+        <section class="a3">3</section>
+        <section class="a4">4</section>
+      </div>
 
 
 

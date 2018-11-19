@@ -6,9 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>qq-mail</title>
   <style>
+    html{
+      height:100%；
+    }
     body{
+        height: 100%;
         margin: 0;
-        padding:0;
+        /* padding:0; */
       }
     
     .box1{
@@ -29,55 +33,54 @@
       box-sizing: border-box;
       background-color:#FAFAFA;
     } 
-    /* .fbox{
-      height: 40px;
-      margin: 0;
-      border: 0; */
-      
-    
-    .box3{
-      float: left;
-
-      width:199px;
+     .fbox{ 
       height: calc(100%-40px);
-      
-       border-right:1px solid #DADADA; 
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+      /* border: 0; */
+     }
+     .box3{
+      float:left;
+      width:199px;
+      height: 100%;
+      border-right:1px solid #DADADA;
+      box-sizing: border-box; 
     }
      .box3 ul{
       list-style: none;
       padding:0;
       margin: 0;
+      width: 199px;
+      height: 100%
+      /* border:0; */
     }
     .box3 ul li{
       font-family: "Helvetica Neue",Helvetica,Verdana,sans-serif;
-      
-      line-height: 1.2;
-      box-sizing: border-box;
+      box-sizing: border-box; 
       border-bottom: 1px solid #ddd;
       padding:0px;
       text-align:center;
-      width: 199px;
-      height:25px; 
-
     } 
      .box4{
       margin-left:  199px;
-      height: calc(100%-40px);
+      height: 100%;
       width:calc(100%-200px);
-      border-left:1px solid #DADADA;
+     
+      text-align:top;
     } 
   </style> 
 </head>
 <body>
   <div>
       <div class="box1"> <a href="https://w.mail.qq.com/cgi-bin/mobile?sid=4rs7ydn84CLMKU0WDKHQO-Ct,4,qM0VIeFowU25Ickk1SE1CNUwwcmg1aTdkSjhsOXVqWGxkZTJSQ0I1eVhqNF8.&t=phone#today,reload"><img src="./qqmailtubiao.png" alt="qq-mail"></a> 
-    </div>   
+      </div>   
       <div class="box2"></div>   
   </div>
      
   <div class="fbox">
       <div class="box3">
-          <ul>
+           <ul>
             <li>收件箱</li>
             <li>文件夹</li>
             <li>记事本</li>
@@ -90,7 +93,7 @@
             <li>设置</li>
           </ul>
       </div>
-      <div class="box4"></div>
+      <div class="box4">sdfdsf</div>
   </div>
 </body>
 </html>
