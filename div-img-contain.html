@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div{
+      border: 1px solid;
+      width:300px;
+      height: 300px;
+      line-height: 300px;
+      font-size: 0;  /*字号为零，100%横图居中*/
+      text-align: center;/*居中，将长图居中*/
+    }
+    img{
+      /* object-fit: contain; */
+      max-width: 100%;
+      max-height: 100%;
+      /* display: block;  配合margin实现竖图居中*/
+      margin: auto;
+      vertical-align: middle;/*将横图居中*/
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="http://s1.dgtle.com/forum/201811/20/165140lj6dg13nlpn771yn.jpg?imageView2/2/w/1200/q/100" alt="">
+  </div>
+  <div>
+    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2000395289,3986681939&fm=27&gp=0.jpg" alt="">
+  </div>
+</body>
+</html>

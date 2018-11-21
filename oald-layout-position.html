@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,body,.f{
+      height: 100%;
+    }
+    body{
+      margin: 0;
+      padding: 0;
+    }
+  .box1{
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+    top: 0;
+    left: 0;
+    background-color: green;
+  }
+  .box2{
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+    top: 0;
+    left:calc(25% );
+    background-color: orange;
+  }
+  #box1{
+    position: absolute; 
+    height:50%;
+    border-bottom: 1px solid blueviolet;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: grey;
+  }
+  #box2{
+    position: absolute; 
+    height:50%;
+    top: calc(50% + 1px);
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: pink;
+  }
+  .box3{
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    box-sizing: border-box;
+    
+    top: 0;
+    left: calc(50%);
+    background-color: olivedrab;
+  }
+  .box4{
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    background-color: lightgrey;
+    border-left: 1px solid black;
+  }
+  </style>
+</head>
+<body>
+<div class="f">
+  <div class="box1"></div>
+  <div class="box2">
+    <section id="box1"></section>
+    <section id="box2"></section>
+  </div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+</div>  
+</body>
+</html>
