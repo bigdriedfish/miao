@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<style>
+ body{
+    margin: 0;
+    padding: 0;
+  }
+  div{
+      border-radius: 25px;
+      height:50px;
+      width:100px;
+      background-color: #9fd468;
+      box-shadow: inset 0 2px 3px rgba(0,0,0,0.2);
+  }
+  label{
+    position:absolute ;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    box-shadow: 0 3px 7px rgba(0,0,0,.3);
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    top: 0;
+  }
+  input:checked + div label{
+    margin-left:50px;
+  }
+  input:checked + div {
+    background-color: grey;
+  }
+</style>
+</head>
+<body>
+    <input type="checkbox" id="radius" hidden>
+    <div>
+      <label for="radius"></label>
+    </div>      
+</body>
+</html>
