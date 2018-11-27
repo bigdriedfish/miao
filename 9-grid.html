@@ -6,39 +6,150 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
-  div{
-  width:300px;
-  height:300px; 
+ .b{
+  list-style-type:none;
+  width:180px;
+  height:180px;
+  background-color: grey;
+  padding:0;
 }
-section{
-  height:90px;
-  width:90px;
-  line-height:90px;
-  text-align:center;
-  border:5px solid blue;
+.b li{
+  width:50px;
+  height:50px;
+  border:5px solid;
   float:left;
-  margin-bottom:-5px;
+  margin-top:-5px;
   margin-right:-5px;
-  box-sizing:border-box;
 }
-section:hover{
+.b li:hover{
   border-color:red;
   position:relative;
-  background-color: gold;
+}
+
+
+
+.a{
+  list-style-type:none;
+  background-color: grey;
+  padding:0;
+  border:2.5px solid;
+  width: 165px;
+  xoverflow:hidden; /*行不通*/
+  xdisplay:inline-block;/*法一*/
+  display:flow-root;/*法二：触发bfc*/
+  
+}
+.a li{
+  width:50px;
+  height: 50px;
+  float:left;
+  border:2.5px solid;
+}
+.a li:hover{
+  border-color:red;
+  box-shadow:0 0 0 2.5px red;
+  position:relative;
+  z-index:8;
+}
+
+.c{
+  list-style-type:none;
+  background-color: grey;
+  padding:0;
+  xborder:2.5px solid;
+  width: 170px;
+  overflow:hidden;
+  padding-bottom: 5px;/*补上overflow裁剪掉的*/
+}
+.c li{
+  width: 50px;
+  float:left;
+  border:5px solid;
+  line-height:50px;
+  margin-right:-5px;
+  margin-bottom:-5px;
+  text-align:center;
+}
+.c li:hover{
+  border-color:red;
+  position:relative;
+  z-index:3;
+}
+
+table{
+  border-collapse:collapse;
+}
+tr,col{
+  border:5px solid;
+}
+td{
+  height: 50px;
+  width: 50px;
+  text-align:center;
+  /* border:5px solid; */
+}
+td:hover{
+  border:5px solid red;/*颜色来源：td>tr>tbody>col>colgroup>table*/
+ 
 }
   </style>
 </head>
 <body>
-  <div>
-    <section>1</section>
-    <section>2</section>
-    <section>3</section>
-    <section>4</section>
-    <section>5</section>
-    <section>6</section>
-    <section>7</section>
-    <section>8</section>
-    <section>9</section>
-  </div>
+  <ol class="b">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ol>
+    <hr>
+  <ol class="a">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ol>
+    <hr>
+    <ol class="c">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+    </ol>
+    <hr>
+    <table>
+      <col>
+      <col>
+      <col>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
 </body>
 </html>
