@@ -37,6 +37,16 @@
     .b:active{
       border-color:blue;
   }
+
+
+
+
+
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -47,3 +57,26 @@
     </div>
 </body>
 </html>
+
+
+
+@media only screen and (max-width: 735px)
+#bin {
+    top: 19px;
+}
+#control {
+  height: 18px;
+}
+#control #panels > a.button{
+  line-height:18px;
+  height:18px;
+}
+#preview iframe,#live iframe,#console{
+  margin-top:35px;
+  padding-top:0;
+  height: calc(100% - 35px);
+  border:5px solid lightblue;
+}
+.label .options{
+  width:200px;
+}

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,body,div{
+      margin:0;
+      padding:0;
+    }
+  @media (min-width:1066px) { 
+.landing{
+  position:relative;
+  height: 800px;
+  width: 100%;
+}
+.landing img{
+  height: 100%;
+  width:100%;
+}
+.middle{
+  height:260px;
+  width: 100%;
+  position: relative;
+}
+  .first{
+    height:260px;
+    width:25%;
+    text-align:center;
+    position:absolute;
+    border-top:2px;
+    border-right:1px;
+    box-sizing:border-box;
+    left:0;
+    top:2px;
+    background-image:url("https://mobike.com/cn/assets/themes/moby/img/promo-01.jpg");
+  }
+  .second{
+    height:260px;
+    width:25%;
+    text-align:center;
+    position:absolute;
+    left:calc(25% + 2px);
+    top:2px;
+    border-top:2px;
+    border-right:1px;
+    border-left:1px;
+    box-sizing:border-box;
+    background-image:url("https://mobike.com/cn/assets/themes/moby/img/promo-02.jpg");
+}
+.third{
+    height:260px;
+    width:25%;
+    text-align:center;
+    position:absolute;
+    left:calc(50% + 4px);
+    top:2px;
+    border-top:2px;
+    border-left:1px;
+    border-right:1px;
+    box-sizing:border-box;
+    background-image:url("https://mobike.com/cn/assets/themes/moby/img/promo-03.jpg");
+
+}
+
+  .last{
+    height:260px;
+    width:25%;
+    text-align:center;
+    position:absolute;
+    left:calc(75% + 6px);
+    top:2px;
+    border-top:2px;
+    border-left:1px;
+    box-sizing:border-box;
+    background-image:url("https://mobike.com/cn/assets/themes/moby/img/promo-04.jpg");
+  }
+  .icon{
+  height: 140px;
+  position:relative;
+  width:100%;
+}
+.iconfont>h4{
+   display:inline-block;
+   height:22px;
+   font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', Arial, Verdana, sans-serif;
+   width: 160px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.42857143;
+   margin: 0;
+   padding: 0;
+   /* vertical-align:middle; */
+}
+.iconfont>p{
+   display:inline-block;
+   font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', Arial, Verdana, sans-serif;
+   width: 160px;
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 1.42857143;
+   margin: 0;
+   padding: 0;
+}
+.picture>img{
+  display:inline-block;
+  width:50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.iconleft{
+  position: absolute;
+  left:0;
+  top:45px;
+}
+.iconleft>.picture>img{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.iconleft>.iconfont>h4{
+  position:absolute;
+  left:60px;
+  top:0;
+}
+.iconleft>.iconfont>p{
+  position:absolute;
+  left:60px;
+  top:22px;
+}
+.iconleft>.picture>img{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.iconleft>.iconfont>h4{
+  position:absolute;
+  left:60px;
+  top:0;
+}
+.iconleft>.iconfont>p{
+  position:absolute;
+  left:60px;
+  top:22px;
+}
+.iconmiddle{
+  position: absolute;
+  left:40%;
+  top:45px;
+}
+.iconmiddle>.picture>img{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.iconmiddle>.iconfont>h4{
+  position:absolute;
+  left:60px;
+  top:0;
+}
+.iconmiddle>.iconfont>p{
+  position:absolute;
+  left:60px;
+  top:22px;
+}
+.iconright{
+  position: absolute;
+  left:75%;
+  top:45px;
+}
+.iconright>.picture>img{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.iconright>.iconfont>h4{
+  position:absolute;
+  left:60px;
+  top:0;
+}
+.iconright>.iconfont>p{
+  position:absolute;
+  left:60px;
+  top:22px;
+}
+
+
+
+
+
+}
+@media (min-width:618px) and (max-width:1066px) {
+  .landing{
+  position:relative;
+  height: 800px;
+  width: 100%;
+}
+.landing img{
+  height: 100%;
+  width:100%;
+}
+.middle{
+  height:520px;
+  width: 100%;
+  position: relative;
+}
+  .first{
+    height:260px;
+    width:50%;
+    text-align:center;
+    position:absolute;
+    border-top:2px;
+    border-right:1px;
+    box-sizing:border-box;
+    left:0;
+    top:2px;
+    background-image:url("https://mobike.com/cn/assets/themes/moby/img/promo-01.jpg");
+  }
+  .second{
+    height:260px;
+    width:50%;
+    text-align:center;
+    position:absolute;
+    left:calc(50% + 2px);
+    top:2px;
+    border-top:2px;
+    border-right:1px;
+    border-left:1px;
+    box-sizing:border-box;
+    background-image:url("https://mobike.com/cn/assets/themes/moby/img/promo-02.jpg");
+}
+.third{
+    height:260px;
+    width:50%;
+    text-align:center;
+    position:absolute;
+    left:0;
+    top:264px;
+    border-top:2px;
+    border-left:1px;
+    border-right:1px;
+    box-sizing:border-box;
+    background-image:url("https://mobike.com/cn/assets/themes/moby/img/promo-03.jpg");
+
+}
+
+  .last{
+    height:260px;
+    width:50%;
+    text-align:center;
+    position:absolute;
+    left:calc(50% + 2px);
+    top:264px;
+    border-top:2px;
+    border-left:1px;
+    box-sizing:border-box;
+    background-image:url("https://mobike.com/cn/assets/themes/moby/img/promo-04.jpg");
+  }
+  .icon{
+  height: 280px;
+  position:relative;
+  width:100%;
+}
+.iconfont>h4{
+   display:inline-block;
+   height:22px;
+   font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', Arial, Verdana, sans-serif;
+   width: 160px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.42857143;
+   margin: 0;
+   padding: 0;
+   /* vertical-align:middle; */
+}
+.iconfont>p{
+   display:inline-block;
+   font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', Arial, Verdana, sans-serif;
+   width: 160px;
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 1.42857143;
+   margin: 0;
+   padding: 0;
+}
+.picture>img{
+  display:inline-block;
+  width:50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.iconleft{
+  position: absolute;
+  left:0;
+  top:45px;
+}
+.iconleft>.picture>img{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.iconleft>.iconfont>h4{
+  position:absolute;
+  left:60px;
+  top:0;
+}
+.iconleft>.iconfont>p{
+  position:absolute;
+  left:60px;
+  top:22px;
+}
+.iconleft>.picture>img{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.iconleft>.iconfont>h4{
+  position:absolute;
+  left:60px;
+  top:0;
+}
+.iconleft>.iconfont>p{
+  position:absolute;
+  left:60px;
+  top:22px;
+}
+.iconmiddle{
+  position: absolute;
+  left:75%;
+  top:45px;
+}
+.iconmiddle>.picture>img{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.iconmiddle>.iconfont>h4{
+  position:absolute;
+  left:60px;
+  top:0;
+}
+.iconmiddle>.iconfont>p{
+  position:absolute;
+  left:60px;
+  top:22px;
+}
+.iconright{
+  position: absolute;
+  left:0;
+  top:180px;
+}
+.iconright>.picture>img{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.iconright>.iconfont>h4{
+  position:absolute;
+  left:60px;
+  top:0;
+}
+.iconright>.iconfont>p{
+  position:absolute;
+  left:60px;
+  top:22px;
+}  
+}
+@media (max-width:618px){
+  .landing{
+  position:relative;
+  height: 800px;
+  width: 100%;
+  /* background-image:url("https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-3.jpg"); */
+}
+.landing img{
+  height: 100%;
+  width: 100%;
+}
+.middle{
+  height:260px;
+  width: 100%;
+  position: relative;
+}
+.first{
+    height:260px;
+    width:100%;
+    text-align:center;
+    position:absolute;
+    border-top:2px;
+    box-sizing:border-box;
+    top:2px;
+    background-image:url("https://mobike.com/cn/assets/themes/moby/img/promo-01.jpg");
+  }
+  .second{
+    height:260px;
+    width:100%;
+    text-align:center;
+    position:absolute;
+
+    top:4px;
+    border-top:2px;
+    box-sizing:border-box;
+    background-image:url("https://mobike.com/cn/assets/themes/moby/img/promo-02.jpg");
+}
+.third{
+    height:260px;
+    width:100%;
+    text-align:center;
+    position:absolute;
+    top:6px;
+    border-top:2px;
+    box-sizing:border-box;
+    background-image:url("https://mobike.com/cn/assets/themes/moby/img/promo-03.jpg");
+
+}
+
+  .last{
+    height:260px;
+    width:100%;
+    text-align:center;
+    position:absolute;
+    top:8px;
+    border-top:2px;
+    box-sizing:border-box;
+    background-image:url("https://mobike.com/cn/assets/themes/moby/img/promo-04.jpg");
+  }
+  .icon{
+  height: 140px;
+  position:relative;
+  width:100%;
+}
+.iconfont>h4{
+   display:inline-block;
+   height:22px;
+   font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', Arial, Verdana, sans-serif;
+   width: 160px;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.42857143;
+   margin: 0;
+   padding: 0;
+   /* vertical-align:middle; */
+}
+.iconfont>p{
+   display:inline-block;
+   font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', Arial, Verdana, sans-serif;
+   width: 160px;
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 1.42857143;
+   margin: 0;
+   padding: 0;
+}
+.picture>img{
+  display:inline-block;
+  width:50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.iconleft{
+  position: absolute;
+  left:0;
+  top:45px;
+}
+.iconleft>.picture>img{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.iconleft>.iconfont>h4{
+  position:absolute;
+  left:60px;
+  top:0;
+}
+.iconleft>.iconfont>p{
+  position:absolute;
+  left:60px;
+  top:22px;
+}
+.iconleft>.picture>img{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.iconleft>.iconfont>h4{
+  position:absolute;
+  left:60px;
+  top:0;
+}
+.iconleft>.iconfont>p{
+  position:absolute;
+  left:60px;
+  top:22px;
+}
+.iconmiddle{
+  position: absolute;
+  left:0;
+  top:135px;
+}
+.iconmiddle>.picture>img{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.iconmiddle>.iconfont>h4{
+  position:absolute;
+  left:60px;
+  top:0;
+}
+.iconmiddle>.iconfont>p{
+  position:absolute;
+  left:60px;
+  top:22px;
+}
+.iconright{
+  position: absolute;
+  left:0;
+  top:225px;
+}
+.iconright>.picture>img{
+  position:absolute;
+  left:0;
+  top:0;
+}
+.iconright>.iconfont>h4{
+  position:absolute;
+  left:60px;
+  top:0;
+}
+.iconright>.iconfont>p{
+  position:absolute;
+  left:60px;
+  top:22px;
+}
+}
+  </style>
+</head>
+<body>
+  <div class="landing">
+    <img src="https://mobike.com/cn/assets/themes/moby/img/landing/hero-bg-3.jpg" alt="">
+  </div>
+  <div class="middle">
+    <section class="first">大国品牌</section>
+    <section class="second">摩拜科技</section>
+    <section class="third">摩拜生活</section>
+    <section class="last">摩拜校招</section>
+  </div>
+  <div class="icon">
+    <span class="iconleft">
+       <div class="picture">
+        <img src="https://mobike.com/cn/assets/themes/moby/img/icon-wechat.png" alt="">
+      </div>
+      <div class="iconfont">
+        <h4>微信小程序</h4>
+        <p>微信扫一扫，直接用车</p>
+      </div>
+    </span>
+    <span class="iconmiddle">
+      <div class="picture">
+        <img src="https://mobike.com/cn/assets/themes/moby/img/icon-rp.png" alt="">
+      </div>
+      <div class="iconfont">
+        <h4>红包车</h4>
+        <p>骑摩拜，能赚钱</p>
+      </div>    
+   </span>
+   <span class="iconright">
+     <div class="picture">
+       <img src="https://mobike.com/cn/assets/themes/moby/img/icon-credit.png" alt="">
+     </div>
+     <div class="iconfont">
+       <h4>摩范分</h4>
+       <p>文明骑行，信用生活</p>
+     </div>
+   </span>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+

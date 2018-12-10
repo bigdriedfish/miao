@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>font-awesome</title>
+  <style>
+    @font-face{
+      font-family: BigYeDeFont;
+      src: url('font-awesome-4.7.0/fonts/fontawesome-webfont.woff2');
+    }
+    .fa,.didideziti{
+      font-weight: normal;
+      font-style: normal;
+      font-family: BigYeDeFont;
+    }
+    .facebook-square::before{
+      content:'\f082' ;
+    }
+    .camera-retro::before{
+      content: '\f083';
+      font-size: 1.33333333em;
+      line-height: 0.75em;
+      vertical-align: -15%;
+    }
+    .fa-2x::before{
+      content:'\f083';
+      font-size: 2em;
+    }
+    .fa-3x::before{
+      content:'\f083';
+      font-size: 3em;
+    }
+    .fa-4x::before{
+      content:'\f083';
+      font-size: 4em;
+    }
+    .fa-5x::before{
+      content:'\f083';
+      font-size: 5em;
+    }
+    .fa-check-square::before{
+      content:'\f046';
+    }
+    .fa-check-square::before{
+      content:'\f046';
+    }
+    .fa-spin::before{
+      content:'\f110';
+    }
+    .fa-square::before{
+      content:'\f0c8';
+    }
+    ul{
+      padding:0;
+      margin:0;
+      list-style: none;
+    }
+    .fa-border {
+    padding: .2em .25em .15em;
+    border: solid 0.08em #eeeeee;
+    border-radius: .1em;
+    }
+    .fa-pull-right {
+    float: right;
+    }
+    .fa.fa-pull-right {
+    margin-left: .3em;
+    }
+    .fa-pull-left {
+    float: left;
+    }
+    .fa.fa-pull-left {
+    margin-right: .3em;
+    }
+    .fa-quote-left:before {
+    content:"\f10d";
+    font-size: 3em;
+    }
+  </style>
+</head>
+<body>
+    <i class="didideziti facebook-square"></i><br><hr>
+    <i class="didideziti camera-retro"></i><br><hr>
+    <i class="didideziti fa-camera-retro fa-2x"></i><br><hr>
+    <i class="fa fa-camera-retro fa-3x"></i><br><hr>
+    <i class="fa fa-camera-retro fa-4x"></i><br><hr>
+    <i class="fa fa-camera-retro fa-5x"></i><br><hr>
+    <ul class="fa-ul">
+      <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+      <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+      <li><i class="fa-li fa fa-spinner fa-spin"></i>as bullets</li>
+      <li><i class="fa-li fa fa-square"></i>in lists</li>
+    </ul>
+    <br><hr>
+    <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+...tomorrow we will run faster, stretch out our arms farther...And then one fine morning&mdash; So we beat on, boats against the current, borne back ceaselessly into the past. <br><br><hr>
+</body>
+</html>

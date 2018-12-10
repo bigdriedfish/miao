@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>bootstrap-table</title>
+  <style>
+    .table{
+  width: 100%;
+  height: 245px;
+  border:4px solid grey;
+  margin-top:20px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  text-align: left;
+  background-color: black;
+  border-collapse: collapse;
+}
+
+.table th,.table td{
+  border-top: 1px solid #32383e;
+}
+.table th[scope="col"]{
+  height:29px;
+  padding:15px;
+  box-sizing:border-box;
+  border-bottom: 2px solid #32383e;
+}
+.table td,th[scope="row"]{
+  height: 30px;
+  padding: 15px;
+  box-sizing:border-box;
+}
+ .table-hover>tbody>tr:hover {
+    background-color: lightgreen;
+}
+/*以上是table的css*/
+/*以下是tables的css*/
+.tables{
+  width: 100%;
+  height: 245px;
+  border:4px solid grey;
+  margin-top:20px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  text-align: left;
+  background-color: white;
+  border-collapse: collapse;
+}
+.tables th,.tables td {
+  padding:6px;
+  box-sizing:border-box;
+  border-top: 1px solid grey;
+}
+.tables th[scope="col"]{
+  border-bottom: 2px solid grey;
+  height:29px;
+}
+.tables td,.tables th[scope="row"]{
+   height: 30px;
+}
+.table-light{
+  background-color: #fdfdfe;
+}
+.table-danger{
+  background-color: #f5c6cb;
+}
+.table-info{
+  background-color: #bee5eb;
+}
+.table-danger:hover{
+  background-color: #f1b0b7;
+}
+.table-light:hover{
+  background-color: #ececf6;
+}
+.table-info:hover{
+  background-color: #abdde5;
+}
+  </style>
+</head>
+<body>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+<table class="tables table-sm tables-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-light">
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr class="table-danger">
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+     <td class="table-info">@twitter</td>
+    </tr>
+  </tbody>
+</table>  
+</body>
+</html>
