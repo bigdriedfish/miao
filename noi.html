@@ -663,25 +663,222 @@ else{
     console.log(Math.ceil(d + 1.5 * c))
   }
 </script>
-<script id="ch0105/20" type = "">
+<script id="ch0105/20" type = " ">
   var h = +prompt("初始高度")
-  var sum = 0
+  var sum = h
   for (var i = 1;i <= 10;i++) {
-    sum = sum + h
     h = h / 2
+    sum = sum + 2 * h
     console.log(sum)
     console.log(h) 
   }
 </script>
 <script id="ch0105/21" type = " ">
+  var n = +prompt("正整数")
+  for (var i = 1;i <= n;i++) {
+    if (n % 2 == 1) {
+      console.log(n + "*" + "3" + "+" + "1" + "=" + (n * 3 + 1) )
+      n = n * 3 + 1
+    }
+    if (n % 2 == 0) {
+      console.log(n + "/" + "2" +  "="  + n / 2)
+      n = n / 2
+    }
+  }
+  console.log("End")
 </script>
 <script id="ch0105/22" type = " ">
+  var n = 12
+  var s = 300
+  var j = m = t = 0
+
+  for (var i = 1;i <= n;i++) {
+    var a = +prompt("预算")
+    
+  }
 </script>
 <script id="ch0105/23" type = " ">
+  var m = +prompt("药总量")
+  var n = +prompt("取药人数")
+  var s = 0
+  for (var i = 1;i <= n; i++) {
+    var p = +prompt("取药量")
+    if (m >= p ) {
+      m = m - p
+      s++
+    }
+  }
+  console.log(n - s)
 </script>
 <script id="ch0105/24" type = " ">
+  var n = +prompt()
+  var sc = sd = 0
+  for (var i = 1; i  <= n; i++) {
+    var c = +prompt("收缩压")
+    var d = +prompt("舒张压")
+    sc = sc + c 
+    sd = sd + d
+    while (i >= 2) {
+
+    }
+  }
+
+
 </script>
 <script id="ch0105/25" type = " ">
+  
+  for (var i = 81; i <= 350;i++) {
+    var a = i
+    var d70 = a % 7 
+    var d71 = (a - d70) / 7 % 7
+    var d72 = (a - d70 - d71 * 7) / 7 / 7 % 7
+    var d90 = a % 9 
+    var d91 = (a - d90) / 9 % 9
+    var d92 = (a - d90 - d91 * 9) / 9 / 9 % 9
+    if ((d70 == d92) && (d71 == d91) && (d72 == d90)) {
+      console.log(a)
+      console.log("" + d70 + d71  + d72)
+      console.log("" + d90 + d91 + d92)
+    }
+  }
 </script>
 <script id="ch0105/26" type = " ">
+  var n = +prompt()
+  var s = 0
+  for (var i = 1;i <= n;i++) {
+    var b = +prompt()
+    var d10 = b % 10 
+    var d11 = (b - d10) / 10 % 10
+    var d12 = (b - d10 - d11) / 10 / 10 % 10
+    var d13 = (b - d10 - d11 - d12) / 10 / 10 / 10 % 10
+    if (d10 - d13 - d12 - d11 > 0) {
+      s++  
+    }
+  }
+  console.log(s)
+</script>
+<script id="ch0105/27" type = " ">
+  var k = +prompt()
+  sn = 0
+  var i = 0
+  while (sn <= k) {
+    i++
+    sn = sn + 1 / i
+  }
+  console.log(i)
+</script>
+<script id="ch0105/28" type = " ">
+  var a = +prompt()
+  var m = 10
+  var y = 1
+  var x
+  var str = ""
+  while ((a - (a % m)) != 0) {
+    m *= 10
+    y++
+  } 
+  for (var i = 1;i <= y;i++) {
+    var c = 1
+    for (var j = 1;j <= i;j++ ) {
+      c *= 10
+    }
+     x = Math.floor((a % c) / (c / 10))
+    str += (x + " ")
+  }
+  console.log(str.substring(0, str.length - 1))
+    
+</script>
+<script id="ch0105/29" type = "">
+
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
+</script>
+<script id="ch0105/26" type = " ">
+  
 </script>
