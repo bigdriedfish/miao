@@ -1,4 +1,4 @@
-var bigdriedfish = function(){
+var bigdriedfish = function() {
   function chunk(ary, size) {
     let res = []
     for (let i = 0; i < arr.length; i += size) {
@@ -16,9 +16,16 @@ var bigdriedfish = function(){
     return surplus
   }
   
+
+
+
+
   reuturn {
     chunk: chunk,
-    compact: compact
+    compact: compact,
   }
-}
+
+
+
+}()
 
