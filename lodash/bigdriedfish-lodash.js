@@ -15,10 +15,14 @@ var bigdriedfish = (function (){
     }
     return surplus
   }
-  
+  function different(array, [values]) {
+    
+  }
+ 
   return {
     chunk,
-    compact
+    compact,
+    concat
   }
 }) ();
 

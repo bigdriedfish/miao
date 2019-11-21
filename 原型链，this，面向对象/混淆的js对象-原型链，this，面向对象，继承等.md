@@ -1,6 +1,12 @@
 # JS 对象细则
 
-## by xieranmaya
+# 构造函数有return值怎么办？
+- 构造函数里没有显式调用return时，默认是返回this对象，也就是新创建的实例对象。
+- 当构造函数里调用return时，分两种情况：
+  1. return的是五种简单数据类型：String，Number，Boolean，Null，Undefined。
+    这种情况下，忽视return值，依然返回this对象。
+  2. return的是Object
+    这种情况下，不再返回this对象，而是返回return语句的返回值。
 
 ### this
 
@@ -290,8 +296,16 @@ for(var i of 9) {
 }
 
 
-
+* b的实例原型本身是B的原型
 * 判断this  
     * 它在哪个函数(function)里
     * 那个函数怎么被调用的
     * 在外面为window
+* 不知道明确需要返回的结果就返回this
+* 举个例子来说，A和B都要用洗发水，A用完放A那里，B用完放B那里，为什么不集中放在一个地方，这个地方就可以抽象成一个构造函数function，这里A和B都是实例，然后A的洗发水和B的牌子不一样，这里就是A的原型和B的原型不一样，也就是A.prototype与B.prototype是不一样的
+* js中关于**a = new A()** 的理解https://segmentfault.com/a/1190000004275934
+
+
+
+
+* **实例对象的隐式原型** === **构造函数的显式原型**

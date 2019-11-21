@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>可拖拽</title> 
+	<style>
+		.draggable {
+			border: 1px solid;
+			background-color: lightblue;
+			position: absolute;
+			width: 100px;
+			height: 100px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class = "draggable" style = "top:0;left:0"></div>
+	<div class = "draggable" style = "top:0;left:0"></div>
+	<div class = "draggable" style = "top:0;left:0"></div>
+	<div class = "draggable" style = "top:0;left:0"></div>
+<script>
+	//var el = document.querySelector('.draggable')
+	var mousePrevX
+	var mousePrevY
+	var elX
+	var elY
+	var el
+
+
+	function move(e) {
+		var dx = e.clientX - mousePrevX
+		var dy = e.clientY - mousePrevY
+		mousePrevX = e.clientX
+		mousePrevY = e.clientY
+		console.log(parseInt(el.style.top) + dy + 'px')
+		el.style.top = parseInt(el.style.top) + dy + 'px'
+		el.style.left = parseInt(el.style.left) + dx + 'px'
+	}
+
+	document.body.addEventListener('mousedown', function(e) {
+		el = e.target
+		mousePrevX = e.clientX
+		mousePrevY = e.clientY
+	  window.addEventListener('mousemove', move)
+	})
+  window.addEventListener('mouseup', function(e) {
+	  window.removeEventListener('mousemove', move)
+	})
+</script>
+</body>
+</html>
